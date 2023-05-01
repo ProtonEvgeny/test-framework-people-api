@@ -8,6 +8,7 @@ from json import dumps
 
 class PeopleClient(BaseClient):
     def __init__(self):
+        super().__init__()
         self.base_url = BASE_URI
         self.request = APIRequest()
 
